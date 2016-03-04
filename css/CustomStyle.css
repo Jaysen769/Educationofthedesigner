@@ -42,6 +42,16 @@ ul li{
 	display: inline-block;
 	padding: 0px 10px 0px 10px;
 }
+input[type=submit]{
+	display: block;
+	width: 300px;
+	font-family: helvetica;
+	font-weight: bold;
+	border: 4px black solid;
+	font-size: 16px;
+	background-color: #00ff00;
+	margin: auto;
+	}
 input[type=range]{
     -webkit-appearance: none;
     padding-top: 15px;
