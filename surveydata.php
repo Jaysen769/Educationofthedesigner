@@ -22,7 +22,9 @@ if ($conn->connect_error) {
    $var_Q9 = $_POST['BI_9'];
    $var_Q10 = $_POST['BI_10'];
    $var_Q11 = $_POST['BI_11'];
-   $var_Q12 = $_POST['C_12'];
+   // $var_Q12 = $_POST['C_12'];
+   // $var_Q12 = array('C_12');
+   $var_Q12 = implode(', ', $_POST['C_12']);
    $var_Q13 = $_POST['C_13'];
    $var_Q14 = $_POST['C_14'];
    $var_Q15 = $_POST['C_15'];
