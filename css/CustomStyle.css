@@ -170,10 +170,28 @@ a:link{
 #blinking{
 display: inline-block;
 }
-
-
-
-
+#story_text{
+	font-family: serif;
+	font-size: 21px;
+	line-height: 33px;
+}
+.about_text{
+	font-family: helvetica;
+	font-size: 21px;
+	line-height: 33px;
+}
+#about_color{
+	background-color: #00ff00;
+	height: 150px;
+}
+#problem_color{
+	background-color: #f3f315;
+	height: 150px;
+}
+#story_color{
+	background-color: #ff0099;
+	height: 150px;	
+}
 
 
 
