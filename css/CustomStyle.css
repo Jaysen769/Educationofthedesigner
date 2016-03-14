@@ -89,7 +89,11 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 input[type=checkbox] input[type=radio] {
     display: inline-block;
 }
-form select{
+input[type=email]{
+	border: 4px black solid;
+	width: 60%;
+}
+select{
 	-webkit-appearance:none;
 	-moz-appearance:none;
 	-ms-appearance:none;
@@ -180,20 +184,14 @@ display: inline-block;
 	font-size: 21px;
 	line-height: 33px;
 }
-#about_color{
-	background-color: #00ff00;
-	height: 150px;
+#email{
+	width: 90%;
 }
-#problem_color{
-	background-color: #f3f315;
-	height: 150px;
+.textbox{
+	width: 90%;
+	height: 10em;
+	border: 4px solid black;
 }
-#story_color{
-	background-color: #ff0099;
-	height: 150px;	
-}
-
-
 
 
 
