@@ -68,7 +68,7 @@
                       <option value="Other">Other</option>
                     </select>
 
-                    <h3>3. What type of degree is your program?</h3>
+                    <h3>3. Degree</h3>
                     <select name="Degree">
                       <option value="BFA">BFA</option>
                       <option value="BSVA">BSVA</option>
@@ -85,7 +85,7 @@
                       <option value="Senior">Senior</option>
                     </select>
 
-                    <h3>5. Sex?</h3>
+                    <h3>5. Sex</h3>
                     <select name="Sex">
                       <option value="Male">Male</option>
                       <option value="Female">Female</option>
@@ -151,7 +151,7 @@
         <div class="row">
           <div class="col-sm-1"></div>
           <div class="col-sm-5">
-                <h3>10. Select all the classes your program offers.</h3>
+                <h3>10. Select all the classes (or course contents) your program offers.</h3>
                   <input id="10_option" type="checkbox" name="Classes[]" value="branding"><label for="10_option">Branding</label><br>
                   <input id="10_option1" type="checkbox" name="Classes[]" value="web/interactive"><label for="10_option1">Web/Interaction Design</label><br>
                   <input id="10_option2" type="checkbox" name="Classes[]" value="print"><label for="10_option2">Print</label><br>
@@ -185,7 +185,7 @@
                   <input id="13_option3" type="radio" name="Q13" value="21-30"><label for="13_option3">21-30</label> <br>
                   <input id="13_option4" type="radio" name="Q13" value="30+"><label for="13_option4">30+</label> <br>
 
-                <h3>14. Is there a student filter system? (sophomore/Junior reviews)</h3>
+                <h3>14. Is there a student filter system? (Sophomore/Junior reviews)</h3>
                   <input id="14_yes" type="radio" name="Q14" value="yes"><label for="14_yes">Yes</label>
                   <input id="14_no" type="radio" name="Q14" value="no"><label for="14_no">No</label>
 
@@ -196,15 +196,15 @@
                 <input type="range" id="" name="Q15" min="0" max="10">
                 <p class="rangeLabelL">Technical</p><p class="rangeLabelR">Conceptual</p>
 
-                <h3>16. What percentage of work done is Handmade versus digital?</h3>
+                <h3>16. Approximately what percentage of work done is handmade versus digital?</h3>
                 <input type="range" id="" name="Q16" min="0" max="10">
                 <p class="rangeLabelL">Handmade</p><p class="rangeLabelR">Digital</p>
 
-                <h3>17. What percentage of your work is done independently versus collaboratively?</h3>
+                <h3>17. Approximately what percentage of your work is done independently versus collaboratively?</h3>
                 <input type="range" id="" name="Q17" min="0" max="10">
                 <p class="rangeLabelL">Independent</p><p class="rangeLabelR">Collaborative</p>
 
-                <h3>18. What percentage of your courses are design specific?</h3>
+                <h3>18. Approximately what percentage of your courses are design specific?</h3>
                 <input type="range" id="" name="Q18" min="0" max="10">
                 <p class="rangeLabelL">0%</p><p class="rangeLabelR">100%</p>
 
@@ -220,7 +220,7 @@
                 <input type="range" id="" name="Q21" min="0" max="10">
                 <p class="rangeLabelL">Break Rules</p><p class="rangeLabelR">Follow Rules</p>
 
-                <h3>22. What percentage of your professors are full-time versus adjunct?</h3>
+                <h3>22. Approximately what percentage of your professors are full-time versus adjunct?</h3>
                 <input type="range" id="" name="Q22" min="0" max="10">
                 <p class="rangeLabelL">Full-Time</p><p class="rangeLabelR">Adjunct</p>
 
@@ -228,13 +228,13 @@
                   <input id="23_yes" type="radio" name="Q23" value="yes"><label for="23_yes">Yes</label>
                   <input id="23_no" type="radio" name="Q23" value="no"><label for="23_no">No</label>
 
-                <h3>24. On an average week how many hours do you spend on design related work?</h3>
+                <h3>24. In an average week, how many hours do you spend on design related work?</h3>
                   <input id="24_option1" type="radio" name="Q24" value="1-10"><label for="24_option1">1-10</label>
                   <input id="24_option2" type="radio" name="Q24" value="11-20"><label for="24_option2">11-20</label>
                   <input id="24_option3" type="radio" name="Q24" value="21-30"><label for="24_option3">21-30</label>
                   <input id="24_option4" type="radio" name="Q24" value="30+"><label for="24_option4">30+</label>
 
-                <h3>25. Whats your take?</h3>
+                <h3>25. In your words..</h3>
                   <textarea placeholder="Your brief critique of the programs curriculum here. What are the elements of your education you value? What may have been missing?" class="textbox" name="Q25" rows="5" cols="50"></textarea>
           </div>
           <div class="col-sm-1"></div>
@@ -267,6 +267,7 @@
 
                 <h3>30. How many hours do you work a week at your job?</h3>
                 <select name="Q30">
+                  <option value="none">None</option>
                   <option value="1-10">1-10</option>
                   <option value="10-15">10-15</option>
                   <option value="15-20">15-20</option>
@@ -289,12 +290,12 @@
                   <input type="range" id="" name="Q33" min="0" max="10">
                   <p class="rangeLabelL">Yes</p><p class="rangeLabelR">No</p>
 
-                <h3>34. Do you live...</h3>
+                <h3>34. Where do you live when classes are in session?</h3>
                   <input id="34_option1" type="radio" name="Q34" value="on capus"><label for="34_option1">On Campus</label>
                   <input id="34_option2" type="radio" name="Q34" value="off campus"><label for="34_option2">Off Campus</label>
 
-                <h3>35. Describe your work environment</h3>
-                  <textarea placeholder="Describe where you did most of your work. Were other students around? Describe the furnature/ambiance. How did your environment influence your work?" class="textbox" name="Q35" rows="5" cols="50"></textarea>
+                <h3>35. Describe your work environment.</h3>
+                  <textarea placeholder="Describe where you did/do most of your work. Were other students around? Describe the furniture/ambiance. How did your environment influence your work?" class="textbox" name="Q35" rows="5" cols="50"></textarea>
               
           </div>
           <div class="col-sm-1"></div>
@@ -320,30 +321,36 @@
                   <input id="37_option1" type="radio" name="Q37" value="yes"><label for="37_option1">Yes!</label>
                   <input id="37_option2" type="radio" name="Q37" value="no"><label for="37_option2">No, I'm Terrified</label>
 
-              <h3>38. In retrospect, do you find your program/schools branding to be honest/true?</h3>
+              <h3>38. In retrospect, do you find your program/school's branding to be honest/true?</h3>
                   <input id="38_option1" type="radio" name="Q38" value="yes"><label for="38_option1">Yes</label>
                   <input id="38_option2" type="radio" name="Q38" value="no"><label for="38_option2">No</label>
-
-          </div>
-          <div class="col-sm-5">
 
               <h3>39. Do you feel that your program has connected you to "the real world of design"?</h3>
                 <input type="range" id="" name="Q39" min="0" max="10">
                 <p class="rangeLabelL">Yes</p><p class="rangeLabelR">No</p>
 
-              <h3>40. Do you see yourself working with your peers after graduating?</h3>
-                  <input id="40_option1" type="radio" name="Q40" value="yes"><label for="40_option1">Yes</label><br>
-                  <input id="40_option2" type="radio" name="Q40" value="no"><label for="40_option2">No</label><br>
-                  <input id="40_option3" type="radio" name="Q40" value="maby"><label for="40_option3">Maby</label><br>
-                  <input id="40_option4" type="radio" name="Q40" value="unlikely"><label for="40_option4">Unlikely</label><br>
+          </div>
+          <div class="col-sm-5">
 
-              <h3>41. General education and liberal arts classes were..</h3>
-                  <input id="41_option1" type="radio" name="Q41" value="a distraction"><label for="41_option1">A distraction</label><br>
-                  <input id="41_option2" type="radio" name="Q41" value="essential"><label for="41_option2">Essential</label><br>
+              <h3>40. Do you feel that your program helped you develop skills and ways of working / thinking that prepares you for a life as a designer?</h3>
+                <input type="range" id="" name="Q40" min="0" max="10">
+                <p class="rangeLabelL">Yes</p><p class="rangeLabelR">No</p>
 
-              <h3>42. Did your program live up to your expectations?</h3>
-                  <input id="42_option1" type="radio" name="Q42" value="yes"><label for="42_option1">yes</label>
-                  <input id="42_option2" type="radio" name="Q42" value="no"><label for="42_option2">Not Really</label>
+              <h3>41. Do you see yourself working with your peers after graduating?</h3>
+                  <input id="41_option1" type="radio" name="Q41" value="yes"><label for="41_option1">Yes</label><br>
+                  <input id="41_option2" type="radio" name="Q41" value="no"><label for="41_option2">No</label><br>
+                  <input id="41_option3" type="radio" name="Q41" value="maby"><label for="41_option3">Maby</label><br>
+                  <input id="41_option4" type="radio" name="Q41" value="unlikely"><label for="41_option4">Unlikely</label><br>
+
+              <h3>42. General education and liberal arts classes were..</h3>
+                  <input id="42_option1" type="radio" name="Q42" value="a distraction"><label for="42_option1">A distraction</label><br>
+                  <input id="42_option2" type="radio" name="Q42" value="essential"><label for="42_option2">Essential</label><br>
+
+              <h3>43. Did your program live up to your expectations?</h3>
+                  <input id="43_option1" type="radio" name="Q43" value="Absolutely"><label for="43_option1">yes</label><br>
+                  <input id="43_option2" type="radio" name="Q43" value="Mostly"><label for="43_option2">not really</label><br>
+                  <input id="43_option3" type="radio" name="Q43" value="Not Really"><label for="43_option1">yes</label><br>
+                  <input id="43_option4" type="radio" name="Q43" value="No"><label for="43_option2">not really</label><br>
 
           </div>
           <div class="col-sm-1"></div>

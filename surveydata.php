@@ -51,9 +51,10 @@ if ($conn->connect_error) {
    $var_Q38 = $_POST['Q40'];
    $var_Q39 = $_POST['Q41'];
    $var_Q40 = $_POST['Q42'];
+   $var_Q40 = $_POST['Q43'];
 
-$sql = "INSERT INTO survey2 (Email, School, Major, Degree, Status, Sex, Age, Q7, Q8, Q9, Classes, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, Q20, Q21, Q22, Q23, Q24, Q25, Q26, Q27, Q28, Q29, Q30, Q31, Q32, Q33, Q34, Q35, Q36, Q37, Q38, Q39, Q40, Q41, Q42, O_44)
-VALUES ('$email', '$var_Q1', '$var_Q2', '$var_Q3', '$var_Q4', '$var_Q5', '$var_Q6', '$var_Q7', '$var_Q8', '$var_Q9', '$var_Q10', '$var_Q11', '$var_Q12', '$var_Q13', '$var_Q14', '$var_Q15', '$var_Q16', '$var_Q17', '$var_Q18', '$var_Q19', '$var_Q20', '$var_Q21', '$var_Q22', '$var_Q23', '$var_Q24', '$var_Q25', '$var_Q26', '$var_Q27', '$var_Q28', '$var_Q29', '$var_Q30', '$var_Q31', '$var_Q32', '$var_Q33', '$var_Q34', '$var_Q35', '$var_Q36', '$var_Q37', '$var_Q38', '$var_Q39', '$var_Q40', '$var_Q41', '$var_Q42', '$var_Q43', '$var_Q44')";
+$sql = "INSERT INTO survey2 (Email, School, Major, Degree, Status, Sex, Age, Q7, Q8, Q9, Classes, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, Q20, Q21, Q22, Q23, Q24, Q25, Q26, Q27, Q28, Q29, Q30, Q31, Q32, Q33, Q34, Q35, Q36, Q37, Q38, Q39, Q40, Q41, Q42, Q43)
+VALUES ('$email', '$var_Q1', '$var_Q2', '$var_Q3', '$var_Q4', '$var_Q5', '$var_Q6', '$var_Q7', '$var_Q8', '$var_Q9', '$var_Q10', '$var_Q11', '$var_Q12', '$var_Q13', '$var_Q14', '$var_Q15', '$var_Q16', '$var_Q17', '$var_Q18', '$var_Q19', '$var_Q20', '$var_Q21', '$var_Q22', '$var_Q23', '$var_Q24', '$var_Q25', '$var_Q26', '$var_Q27', '$var_Q28', '$var_Q29', '$var_Q30', '$var_Q31', '$var_Q32', '$var_Q33', '$var_Q34', '$var_Q35', '$var_Q36', '$var_Q37', '$var_Q38', '$var_Q39', '$var_Q40', '$var_Q41', '$var_Q42', '$var_Q43')";
 
 
 if ($conn->query($sql) === TRUE) {

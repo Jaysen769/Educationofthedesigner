@@ -9,11 +9,133 @@
       <link rel="stylesheet" type="text/css" href="css/CustomStyle.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
+                <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=
+      AIzaSyCE-RL5HegGUz6DHGHFyAfWvjd9zaKWpNo&callback=initMap">
+          </script>
+                    <script>
+            function initMap() {
+              var customMapType = new google.maps.StyledMapType([
+                  {
+                    stylers: [
+                      {hue: '#00ff00'},
+                      {visibility: 'simplified'},
+                      {gamma: .5},
+                      {weight: 1},
+                      {saturation: 60}
+                    ]
+                  },
+                  {
+                    featureType: 'road',
+                      elementType: 'all',
+                      stylers: [
+                        {hue: '#ff1493'},
+                        {lightness: 30},
+                        {visibility: 'simplified'},
+                        {saturation: 100}
+                      ]
+                  },
+                  {
+                    elementType: 'labels',
+                    stylers: [{visibility: 'off'}]
+                  },
+                  {
+                    featureType: 'water',
+                    stylers: [{color: '#ffffff'}]
+                  }
+                ], {
+                  name: 'Custom Style'
+              });
+              var customMapTypeId = 'custom_style';
+
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 11,
+                center: {lat: 40.7874632, lng: -73.9220436},  // Central Park
+                mapTypeControlOptions: {
+                  mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
+                }
+              });
+
+              var marker = new google.maps.Marker({
+                position: {lat: 41.0466485, lng: -73.6999548},
+                map: map,
+                title: 'Purchase College'
+              });
+
+              var marker = new google.maps.Marker({
+                position: {lat: 40.6936687, lng: -73.9625653},
+                map: map,
+                title: 'Pratt'
+              });
+
+              var marker = new google.maps.Marker({
+                position: {lat: 40.7351635, lng: -73.9968231},
+                map: map,
+                title: 'The New School'
+              });
+
+              var marker = new google.maps.Marker({
+                position: {lat: 40.738758, lng: -73.9844157},
+                map: map,
+                title: 'SVA'
+              });
+
+              var marker = new google.maps.Marker({
+                position: {lat: 40.7280862, lng: -73.9937973},
+                map: map,
+                title: 'The Cooper Union'
+              });
+
+              var marker = new google.maps.Marker({
+                position: {lat: 40.747488, lng: -73.9972707},
+                map: map,
+                title: 'FIT'
+              });
+
+              var marker = new google.maps.Marker({
+                position: {lat: 40.8200511, lng: -73.9514611},
+                map: map,
+                title: 'The City College'
+              });
+
+              var marker = new google.maps.Marker({
+                position: {lat: 40.7710994, lng: -73.9874602},
+                map: map,
+                title: 'Fordham'
+              });
+
+              var marker = new google.maps.Marker({
+                position: {lat: 40.7686833, lng: -73.9669079},
+                map: map,
+                title: 'Hunter College'
+              });
+
+              var marker = new google.maps.Marker({
+                position: {lat: 40.7053196, lng: -74.0335962},
+                map: map,
+                title: 'New York Film Academy'
+              });
+
+              var marker = new google.maps.Marker({
+                position: {lat: 40.7295174, lng: -73.9986496},
+                map: map,
+                title: 'NYU'
+              });
+
+              var marker = new google.maps.Marker({
+                position: {lat: 40.7357181, lng: -73.819566},
+                map: map,
+                title: 'Queens College'
+              });
+
+
+
+              map.mapTypes.set(customMapTypeId, customMapType);
+              map.setMapTypeId(customMapTypeId);
+            }
+          </script>
     </head>
     <body>
-
-
-
 
   	<div class="container">
         <nav class="row">
@@ -29,27 +151,27 @@
 
         <div class="row">
           <div class="col-sm-12" style="height: 50px;"></div>
-  		    <div class="col-sm-12 categoryRule">
-  		      <h2>New York Metro Area</h2>
-  		    </div>
-        </div>
+  		    <div class="col-sm-12 categoryRule"><h2>New York Metro Area</h2></div>
+          <div id="map"></div>
+  		  </div>
 
     		<div class="row">
     			<div class="col-sm-1"></div>
       		<div class="col-sm-5">
-      			<h2><div class="schLink"><input type="checkbox"><label>1.)</label></div>Purchase College</h2>
-      			<h2><div class="schLink"><input type="checkbox"><label>2.)</label></div>Pratt</h2>
-      			<h2><div class="schLink"><input type="checkbox"><label>3.)</label></div>The New School</h2>
-      			<h2><div class="schLink"><input type="checkbox"><label>4.)</label></div>SVA</h2>
-      			<h2><div class="schLink"><input type="checkbox"><label>5.)</label></div>Cooper Union</h2>
-      			<h2><div class="schLink"><input type="checkbox"><label>6.)</label></div>FIT</h2>
-      			<h2><div class="schLink"><input type="checkbox"><label>7.)</label></div>City College</h2>
+      			<h2 class="school">Purchase College</h2>
+      			<h2 class="school">Pratt</h2>
+      			<h2 class="school">The New School</h2>
+      			<h2 class="school">SVA</h2>
+      			<h2 class="school">Cooper Union</h2>
+      			<h2 class="school">FIT</h2>
+      			<h2 class="school">City College</h2>
       		</div>
       		<div class="col-sm-5">
-      			<h2><div class="schLink"><input type="checkbox"><label>8.)</label></div>Fordham University</h2>
-      			<h2><div class="schLink"><input type="checkbox"><label>9.)</label></div>Hunter College</h2>
-      			<h2><div class="schLink"><input type="checkbox"><label>10.)</label></div>New York Film Academy</h2>
-      			<h2><div class="schLink"><input type="checkbox"><label>11.)</label></div>NYU</h2>
+      			<h2 class="school">Fordham University</h2>
+      			<h2 class="school">Hunter College</h2>
+      			<h2 class="school">New York Film Academy</h2>
+      			<h2 class="school">NYU</h2>
+            <h2 class="school">Queens College</h2>
       		</div>
       		<div class="col-sm-1"></div>
     		</div>

@@ -159,9 +159,12 @@ a:link{
 	text-align: right;
 	right: 15px;
 }
-.schLink{
-	display: inline;
+.school{
+	display: block;
 	z-index: 1;
+}
+.school:hover{
+	color: #ff1493;
 }
 #cover{
 	top: 30px;
@@ -192,8 +195,10 @@ display: inline-block;
 	height: 10em;
 	border: 4px solid black;
 }
-
-
+#map {
+        height: 500px;
+        width: 100%;
+}
 
 
 
