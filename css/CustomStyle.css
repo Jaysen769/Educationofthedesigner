@@ -167,12 +167,11 @@ a:link{
 	color: #ff1493;
 }
 #cover{
-	top: 30px;
-	left: 20px;
-	width: 60%;
+	width: 80%;
 	position: relative;
-	display: inline-block;
+	display: block;
 	margin: auto;
+	top: 22em;
 }
 #blinking{
 display: inline-block;
@@ -199,8 +198,15 @@ display: inline-block;
         height: 500px;
         width: 100%;
 }
+#copyrite{
+	position: relative;
+	bottom: 5px;
+	font-size: 12px;
 
-
+}
+#coverpattern{
+	background-image: url(../images/CheckBox.gif);
+}
 
 
 
