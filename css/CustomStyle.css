@@ -139,6 +139,9 @@ a:link{
 	text-decoration: none;
 	color: black;
 }
+a:hover{
+	color: #ff1493;
+}
 .container{
 	max-width: 940px;
 }
@@ -163,28 +166,17 @@ a:link{
 	display: block;
 	z-index: 1;
 }
-.school:hover{
-	color: #ff1493;
-}
-#cover{
-	width: 80%;
-	position: relative;
-	display: block;
-	margin: auto;
-	top: 22em;
-}
-#blinking{
-display: inline-block;
-}
 #story_text{
 	font-family: serif;
 	font-size: 21px;
 	line-height: 33px;
+	color: #ff1493
 }
 .about_text{
 	font-family: helvetica;
 	font-size: 21px;
 	line-height: 33px;
+	color: #ff1493
 }
 #email{
 	width: 90%;
@@ -195,7 +187,7 @@ display: inline-block;
 	border: 4px solid black;
 }
 #map {
-        height: 500px;
+        height: 350px;
         width: 100%;
 }
 #copyrite{
@@ -205,13 +197,58 @@ display: inline-block;
 
 }
 #coverpattern{
-	background-image: url(../images/CheckBox.gif);
+	background-image: url(../images/index_box.gif);
 }
+#logo{
+	position: relative;
+	display: block;
+	width: 80%;
+	margin: auto;
+	padding-top: 1em;
+}
+#cover{
+	width: 80%;
+	height: 20%;
+	background-color: white;
+	border: 4px black solid;
+	position: relative;
+	margin: auto;
+	margin-top: 18em;
 
-
-
-
-
+}
+#surveybrief{
+	padding-top: 2em;
+	color: #00ff00;
+}
+.statNum{
+	font-size: 11em;
+}
+.sliderL{
+	float: left;
+	display: inline;
+	font-size: 2em;
+	color: #00ff00;
+}
+.sliderR{
+	float: right;
+	display: inline;
+	font-size: 2em;
+	color: #ff1493;
+	text-align: right;
+}
+.sliderLL{
+	float: left;
+	display: inline;
+	font-size: 3em;
+	color: #00ff00;
+}
+.sliderRL{
+	float: right;
+	display: inline;
+	font-size: 3em;
+	color: #ff1493;
+	text-align: right;
+}
 
 
 

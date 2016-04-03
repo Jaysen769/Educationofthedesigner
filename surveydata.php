@@ -35,7 +35,7 @@ if ($conn->connect_error) {
    $var_Q22 = $_POST['Q22'];
    $var_Q23 = $_POST['Q23'];
    $var_Q24 = $_POST['Q24'];
-   $var_Q25 = $_POST['Q25'];
+   $var_Q25 = addslashes($_POST['Q25']);
    $var_Q26 = $_POST['Q26'];
    $var_Q27 = $_POST['Q27'];
    $var_Q28 = $_POST['Q28'];
@@ -45,8 +45,8 @@ if ($conn->connect_error) {
    $var_Q32 = $_POST['Q32'];
    $var_Q33 = $_POST['Q33'];
    $var_Q34 = $_POST['Q34'];
-   $var_Q35 = $_POST['Q35'];
-   $var_Q36 = $_POST['Q36'];
+   $var_Q35 = addslashes($_POST['Q35']);
+   $var_Q36 = implode(', ', $_POST['Q36']);
    $var_Q37 = $_POST['Q37'];
    $var_Q38 = $_POST['Q38'];
    $var_Q39 = $_POST['Q39'];
