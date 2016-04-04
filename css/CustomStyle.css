@@ -148,6 +148,7 @@ a:hover{
 .categoryRule{
 	display: block;
 	border-bottom: 3px solid black;
+	margin-top: 1em;
 }
 .rangeLabelL{
 	font-size: 12px;
@@ -222,33 +223,15 @@ a:hover{
 }
 .statNum{
 	font-size: 11em;
+	margin-bottom: -.2em;
+	margin-top: .2em;
 }
-.sliderL{
-	float: left;
-	display: inline;
-	font-size: 2em;
-	color: #00ff00;
+.infomargin{
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
-.sliderR{
-	float: right;
-	display: inline;
-	font-size: 2em;
-	color: #ff1493;
-	text-align: right;
+.slidemargin{
+	margin-top: 1em;
+	margin-bottom: 2em;
 }
-.sliderLL{
-	float: left;
-	display: inline;
-	font-size: 3em;
-	color: #00ff00;
-}
-.sliderRL{
-	float: right;
-	display: inline;
-	font-size: 3em;
-	color: #ff1493;
-	text-align: right;
-}
-
-
 

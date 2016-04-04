@@ -18,10 +18,10 @@
               var customMapType = new google.maps.StyledMapType([
                   {
                     stylers: [
-                      {hue: '#00ff00'},
+                      {hue: '#ff1493'},
                       {visibility: 'simplified'},
-                      {gamma: .5},
-                      {weight: 1},
+                      {gamma: .4},
+                      {weight: .6},
                       {saturation: 60}
                     ]
                   },
@@ -29,8 +29,8 @@
                     featureType: 'road',
                       elementType: 'all',
                       stylers: [
-                        {hue: '#ff1493'},
-                        {lightness: 30},
+                        {hue: '#00ff00'},
+                        {lightness: 50},
                         {visibility: 'simplified'},
                         {saturation: 100}
                       ]
@@ -49,82 +49,96 @@
               var customMapTypeId = 'custom_style';
 
               var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 11,
-                center: {lat: 40.7774632, lng: -73.9220436},  // Central Park
+                zoom: 12,
+                center: {lat: 40.7574632, lng: -73.9220436},  // Central Park
                 mapTypeControlOptions: {
                   mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
                 }
               });
 
+
+              var image = 'images/pinpoint.png';
               var marker = new google.maps.Marker({
                 position: {lat: 41.0466485, lng: -73.6999548},
                 map: map,
+                icon: image,
                 title: 'Purchase College'
               });
 
               var marker = new google.maps.Marker({
                 position: {lat: 40.6936687, lng: -73.9625653},
                 map: map,
+                icon: image,
                 title: 'Pratt'
               });
 
               var marker = new google.maps.Marker({
                 position: {lat: 40.7351635, lng: -73.9968231},
                 map: map,
+                icon: image,
                 title: 'The New School'
               });
 
               var marker = new google.maps.Marker({
                 position: {lat: 40.738758, lng: -73.9844157},
                 map: map,
+                icon: image,
                 title: 'SVA'
               });
 
               var marker = new google.maps.Marker({
                 position: {lat: 40.7280862, lng: -73.9937973},
                 map: map,
+                icon: image,
                 title: 'The Cooper Union'
               });
 
               var marker = new google.maps.Marker({
                 position: {lat: 40.747488, lng: -73.9972707},
                 map: map,
+                icon: image,
                 title: 'FIT'
               });
 
               var marker = new google.maps.Marker({
                 position: {lat: 40.8200511, lng: -73.9514611},
                 map: map,
+                icon: image,
                 title: 'The City College'
               });
 
               var marker = new google.maps.Marker({
                 position: {lat: 40.7710994, lng: -73.9874602},
                 map: map,
+                icon: image,
                 title: 'Fordham'
               });
 
               var marker = new google.maps.Marker({
                 position: {lat: 40.7686833, lng: -73.9669079},
                 map: map,
+                icon: image,
                 title: 'Hunter College'
               });
 
               var marker = new google.maps.Marker({
                 position: {lat: 40.7052812, lng: -74.0164898},
                 map: map,
+                icon: image,
                 title: 'New York Film Academy'
               });
 
               var marker = new google.maps.Marker({
                 position: {lat: 40.7295174, lng: -73.9986496},
                 map: map,
+                icon: image,
                 title: 'NYU'
               });
 
               var marker = new google.maps.Marker({
                 position: {lat: 40.7357181, lng: -73.819566},
                 map: map,
+                icon: image,
                 title: 'Queens College'
               });
 

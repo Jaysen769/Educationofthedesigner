@@ -18,10 +18,10 @@
               var customMapType = new google.maps.StyledMapType([
                   {
                     stylers: [
-                      {hue: '#00ff00'},
+                      {hue: '#ff1493'},
                       {visibility: 'simplified'},
-                      {gamma: .5},
-                      {weight: 1},
+                      {gamma: .4},
+                      {weight: .6},
                       {saturation: 60}
                     ]
                   },
@@ -29,8 +29,8 @@
                     featureType: 'road',
                       elementType: 'all',
                       stylers: [
-                        {hue: '#ff1493'},
-                        {lightness: 30},
+                        {hue: '#00ff00'},
+                        {lightness: 50},
                         {visibility: 'simplified'},
                         {saturation: 100}
                       ]
@@ -49,16 +49,18 @@
               var customMapTypeId = 'custom_style';
 
               var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 10,
+                zoom: 12,
                 center: {lat: 41.0466485, lng: -73.6999548},  // purchase
                 mapTypeControlOptions: {
                   mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
                 }
               });
 
+              var image = 'images/pinpoint.png';
               var marker = new google.maps.Marker({
                 position: {lat: 41.0466485, lng: -73.6999548},
                 map: map,
+                icon: image,
                 title: 'Purchase College'
               });
 
@@ -84,7 +86,7 @@
         </nav>
 
         <div class="row">
-          <div class="col-sm-12" style="height: 50px;"></div>
+          <div class="col-sm-12" style="height: 20px;"></div>
         </div>
         <div class="row">
   		    <div class="col-sm-12 categoryRule"><h2>Purchase College</h2> <h4>School of Art+Design</h4></div>
@@ -104,9 +106,9 @@
           <div class="col-sm-6" id="map" style="width: 50%; "></div>
           <div class="col-sm-6">
             <a href="http://www.purchase.design/"><h1>www.purchase.design</h1></a>
-            <h3>Estabished 1967</h3>
-            <h3>4,000> Students</h3>
-            <h3>Tuition 7,573-17,023</h3>
+            <h3>Estabished <span style="color:#00ff00">1967</span></h3>
+            <h3>Students <span style="color:#00ff00">4,000+</span></h3>
+            <h3>Tuition <span style="color:#00ff00">7,573-17,023</span></h3>
             <h3>435 Anderson Hill Road<br>Purchase NY, 10577</h3>
           </div>
   		  </div>
@@ -125,10 +127,16 @@
             <h1 class="statNum">00%</h1>
             <h3>of students potentially plan on attending graduate school.</h3>
           </div>
+
           <div class="col-sm-7">
           <h3 class="categoryRule">Survey Pool</h3>
-            <img style="width:100%" src="images/INFOGRAPHICS/survey_demographic.png">
-            <img style="width:100%" src="images/INFOGRAPHICS/survey_status.png">
+            <img class="infomargin" style="width:100%" src="images/INFOGRAPHICS/gender2.png">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <img class="infomargin" style="width:100%" src="images/INFOGRAPHICS/survey_status.png">
           </div>
         </div>
 
@@ -137,69 +145,55 @@
         </div>
         <div class="row">
           <div class="col-sm-12">
-            <h2 style="font-size:4em; color:#00ff00;">Classes Offered</h2>
-            <img style="width:100%" src="images/INFOGRAPHICS/classes.png">
+            <img class="infomargin" style="width:100%" src="images/INFOGRAPHICS/classes.png">
           </div>
         </div>
+
         <div class="row">
-          <div class="col-sm-5">
-            <h1 class="statNum">YES</h1>
-            <h3>You can take fine arts courses along with the design curiculum.</h3>
-
-            <h1 class="statNum">1-10</h1>
-            <h3>Is the average studio class size.</h3>
-
-            <h1 class="statNum">YES</h1>
-            <h3>There is a student filter system.</h3>
-
-          </div>
           <div class="col-sm-7">
             <h3 class="categoryRule">Average Credits per semester</h3>
             <img style="width:100%" src="images/INFOGRAPHICS/credits.png">
+            <h3 class="categoryRule">Average hours of work per week</h3>
+            <img class="infomargin" style="width:100%" src="images/INFOGRAPHICS/avgwork.png">
+          </div>
+
+        <div class="col-sm-5">
+            <h1 class="statNum">YES</h1>
+            <h3>You can take fine arts courses along with the design curiculum.</h3>
+            <h1 class="statNum">1-10</h1>
+            <h3>Average studio class size.</h3>
+            <h1 class="statNum">YES</h1>
+            <h3>There is a student filter system.</h3>
           </div>
         </div>
 
         <div class="row">
           <div class="col-sm-12">
-          <h2 class="sliderLL">Conceptual</h2> <h2 class="sliderRL">Technical</h2>
-          <img style="width:100%" src="images/INFOGRAPHICS/slider_conceptual.png">
+          <h2 class="categoryRule">Spectrums</h2>
+          <h3>Does your program place more weight on <br>technical skills, or conceptual thinking?</h3>
+          <img class="slidemargin" style="width:100%" src="images/INFOGRAPHICS/slider_concept.png">
           </div>
         </div>
 
         <div class="row">
-          <div class="col-sm-6">
-            <h2 class="sliderL">Handmade</h2> <h2 class="sliderR">Digial</h2>
-            <img style="width:100%" src="images/INFOGRAPHICS/handmade.png">
-
-            <h2 class="sliderL">Independent</h2> <h2 class="sliderR">Collaboratively</h2>
-            <img style="width:100%" src="images/INFOGRAPHICS/handmade.png">
-
-            <h2 class="sliderL">Design</h2> <h2 class="sliderR">Liberal Arts</h2>
-            <img style="width:100%" src="images/INFOGRAPHICS/handmade.png">
-
-            <h2 class="sliderL">Total</h2> <h2 class="sliderR">Limited</h2>
-            <img style="width:100%" src="images/INFOGRAPHICS/handmade.png">
-
-            <h2 class="sliderL">Full Time</h2> <h2 class="sliderR">Adjunct</h2>
-            <img style="width:100%" src="images/INFOGRAPHICS/handmade.png">
-
-            <h2 class="sliderL">Handmade</h2> <h2 class="sliderR">Digial</h2>
-            <img style="width:100%" src="images/INFOGRAPHICS/handmade.png">
+          <div class="col-sm-7">
+            <h3>Approximately what percentage of work done is handmade versus digital?</h3>
+            <img class="slidemargin" style="width:100%" src="images/INFOGRAPHICS/slider_handmade.png">
+            <h3>Approximately what percentage of your work is done independently versus collaboratively?</h3>
+            <img class="slidemargin" style="width:100%" src="images/INFOGRAPHICS/slider_independent.png">
+            <h3>Approximately what percentage of your courses are design specific?</h3>
+            <img class="slidemargin" style="width:100%" src="images/INFOGRAPHICS/slider_specific.png">
           </div>
 
-          <div class="col-sm-6">
-            <h2 class="sliderL">Class Taught</h2> <h2 class="sliderR">Self Taught</h2>
-            <img style="width:100%" src="images/INFOGRAPHICS/handmade.png">
-
-            <h2 class="sliderL">Break Rules</h2> <h2 class="sliderR">Follow Rules</h2>
-            <img style="width:100%" src="images/INFOGRAPHICS/handmade.png">
-
-            <h2 class="sliderL">Yes</h2> <h2 class="sliderR">No</h2>
-            <img style="width:100%" src="images/INFOGRAPHICS/handmade.png">
-
-            <h3 class="categoryRule">Average hours of work per week</h3>
-
-            <img style="width:100%" src="images/INFOGRAPHICS/avgwork.png">
+          <div class="col-sm-5">
+            <h4>Do you have limited or total creative freedom over your work?</h4>
+            <img class="slidemargin" style="width:100%" src="images/INFOGRAPHICS/slider_freedom.png">
+            <h4>Are your technical skills predominantly class taught or self taught?</h4>
+            <img class="slidemargin" style="width:100%" src="images/INFOGRAPHICS/slider_selftaught.png">
+            <h4>Does your program encourage you to break rules/conventions, or follow them?</h4>
+            <img class="slidemargin" style="width:100%" src="images/INFOGRAPHICS/slider_rules.png">
+            <h4>Approximately what percentage of your professors are full-time versus adjunct?</h4>
+            <img class="slidemargin" style="width:100%" src="images/INFOGRAPHICS/slider_adjunct.png">
           </div>
         </div>
 
@@ -209,11 +203,14 @@
         </div>
 
         <div class="row">
-          <div class="col-sm-7">
+          <div class="col-sm-12">
             <h3 class="categoryRule">Where student do most of their work.</h3>
             <img style="width:100%" src="images/INFOGRAPHICS/workdone.png">
           </div>
+        </div>
 
+
+        <div class="row">
           <div class="col-sm-5">
             <h1 class="statNum">YES</h1>
             <h3>There is a design specific community workspace.</h3>
@@ -223,32 +220,30 @@
 
             <h1 class="statNum">00%</h1>
             <h3>Of students hold a job while school is in session.</h3>
+          </div>
 
+          <div class="col-sm-7">
             <h3 class="categoryRule">Of the students that hold a job.</h3>
             <img style="width:100%" src="images/INFOGRAPHICS/hoursworked.png">
-
           </div>
         </div>
 
         <div class="row">
           <div class="col-sm-12">
-          <h3>The sense of community among students.</h3>
-          <h2 class="sliderLL">Strong</h2> <h2 class="sliderRL">Weak</h2>
-          <img style="width:100%" src="images/INFOGRAPHICS/slider_conceptual.png">
-
-          <h3>Do you have a personal or professional relationship with your professors?</h3>
-          <h2 class="sliderLL">Personal</h2> <h2 class="sliderRL">Professional</h2>
-          <img style="width:100%" src="images/INFOGRAPHICS/slider_conceptual.png">
-
-          <h3>Do you consider your peers a diverse group socially /ethnically /financially?</h3>
-          <h2 class="sliderLL">Yes</h2> <h2 class="sliderRL">No</h2>
-          <img style="width:100%" src="images/INFOGRAPHICS/slider_conceptual.png">
-          </div>
+          <h3 class="categoryRule">How strong is the sense of community among students in your program?</h3>
+          <img class="infomargin" style="width:100%" src="images/INFOGRAPHICS/community.png">
         </div>
 
         <div class="row">
-          <div class="col-sm-12">
-            <h3 class="categoryRule">Do you live on campus when classes are in session?</h3>
+          <div class="col-sm-5">
+            <h1 class="statNum">00%</h1>
+            <h3>Of students feel that they have a personal relationship with their professors.</h3>
+
+            <h1 class="statNum">00%</h1>
+            <h3>Of students consider their peers a diverse group socially / ethnically / financially.</h3>
+          </div>
+          <div class="col-sm-7">
+          <h3 class="categoryRule">Do you live on campus while classes are in session?</h3>
             <img style="width:100%" src="images/INFOGRAPHICS/livecampus.png">
           </div>
         </div>
@@ -281,13 +276,11 @@
         </div>
         <div class="row">
           <div class="col-sm-12">
-            <h3>Do you feel that your program has connected you to "the real world of design"?</h3>
-          <h2 class="sliderLL">Yes</h2> <h2 class="sliderRL">No</h2>
-          <img style="width:100%" src="images/INFOGRAPHICS/slider_conceptual.png">
+            <h3>Do you feel that your program has connected <br>you to "the real world of design"?</h3>
+          <img class="infomargin" style="width:100%" src="images/INFOGRAPHICS/realworld.png">
 
-          <h3>Do you feel that your program helped you develop skills and ways of working / thinking that prepares you for a life as a designer?</h3>
-          <h2 class="sliderLL">Yes</h2> <h2 class="sliderRL">No</h2>
-          <img style="width:100%" src="images/INFOGRAPHICS/slider_conceptual.png">
+          <h3>Do you feel that your program helped you develop<br> skills and ways of working / thinking that prepares <br>you for a life as a designer?</h3>
+          <img class="infomargin" style="width:100%" src="images/INFOGRAPHICS/prepared.png">
           </div>
         </div>
 
