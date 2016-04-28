@@ -1,3 +1,6 @@
+body{
+	background: url(../images/grid5.jpg) fixed;
+}
 h1{
 	font-family: helvetica;
 	font font-size: 36px;
@@ -185,7 +188,6 @@ a:hover{
 }
 #map {
         height: 350px;
-        width: 100%;
 }
 #copyrite{
 	position: relative;
@@ -193,14 +195,21 @@ a:hover{
 	font-size: 12px;
 
 }
-#coverpattern{
+/*#coverpattern{
 	background-repeat: round;
 	background-image: url(../images/CheckBox.gif);
+}*/
+#coverpattern{
+	background-repeat: no-repeat;
+	background-image: url(../images/index_icon1.gif);
+	background-attachment: fixed;
+    background-position: center;
+    background-size: 80%;
 }
 #logoimg{
 	position: relative;
 	display: block;
-	width: 80%;
+	width: 70%;
 	margin: auto;
 	padding-top: 1em;
 }
@@ -210,24 +219,15 @@ a:hover{
 	height: 20%;
 	position: relative;
 	margin-top: 18em;
-	background-color: white;
-	border: .6em black solid;
 }
 #surveybrief{
 	padding-top: 2em;
 	color: #00ff00;
 }
 .statNum{
-	font-size: 10em;
+	font-size: 9em;
 	margin-bottom: -.2em;
 	margin-top: .2em;
-	text-align: center;
-}
-.statNumvar{
-	font-size: 8em;
-	margin-bottom: -.2em;
-	margin-top: .5em;
-	text-align: center;
 }
 .infomargin{
 	margin-top: 1em;
@@ -242,12 +242,17 @@ a:hover{
 	margin-top: 100px;
 }
 .coverlink{
-	margin: 2em;
+	margin: 1em;
 	position: relative;
 	display: inline-block;
-	border: 4px solid black;
-	background-color: #00ff00;
+	border: 4px solid #00ff00;
+/*	background-color: #00ff00;*/
+	color: #00ff00;
 	padding: 0px 20px 0px 20px;
+}
+.covertxt{
+/*	line-height: 20px;*/
+	font-size: 2em;
 }
 #linkcontainer{
 	text-align: center;
@@ -257,17 +262,9 @@ a:hover{
 .coverlink:hover{
 	color: #ff1493;
 }
-#video{
-	display: inline-block;
-	position: relative;
-	border: 4px black solid;
-	width: 100%;
-	height: 450px;
-	background-color: #ff1493;
-}
 .graphlabel{
 	color: #ff1493;
-	border-bottom: 2px #ff1493 dashed;
+	border-bottom: 3px #ff1493 dashed;
 }
 .questionlabel{
 	color: #ff1493;
@@ -275,22 +272,11 @@ a:hover{
 }
 .graphlabelblk{
 	color: #ff1493;
-	border-bottom: 2px black dashed;
+	border-bottom: 3px black dashed;
 }
-#slide1:hover + #BLM {
-	display: inline;
+.pinkdash{
+	border-top: 2px dashed #ff1493;
 }
-#slide1{
-	display: block;
-}
-#BLM{
-	display: none;
-	position: relative;
-	top: -50px
-}
-
-
-
 
 
 

@@ -49,7 +49,7 @@
               var customMapTypeId = 'custom_style';
 
               var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 12,
+                zoom: 9,
                 center: {lat: 41.0466485, lng: -73.6999548},  // purchase
                 mapTypeControlOptions: {
                   mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
@@ -102,7 +102,7 @@
         </div> -->
 
         <div class="row">
-          <div class="col-sm-6" id="map" style="width: 50%; "></div>
+          <div class="col-sm-6" id="map"></div>
           <div class="col-sm-6">
             <a href="http://www.purchase.design/"><h1>www.purchase.design</h1></a>
             <h3>Estabished <span style="color:#00ff00">1967</span></h3>
@@ -143,7 +143,7 @@
 
           <div class="col-sm-4">
             <h1 class="statNum">10%</h1>
-            <h3>of students have considered transfuring.</h3>
+            <h3>of students have considered transferring.</h3>
           </div>
         </div>
 
@@ -160,26 +160,26 @@
 
           <div class="col-sm-1"></div>
 
-          <div class="col-sm-7">
+          <div class="col-sm-8">
             <h3 class="graphlabel">Average hours of school work per week</h3>
             <img class="infomargin" style="width:100%" src="images/INFOGRAPHICS/avgwork.png">
 
             <h3 class="graphlabel">Average amount of credits taken per semester</h3>
             <img style="width:100%" src="images/INFOGRAPHICS/credits.png">
 
-            <div class="col-sm-1"></div>
+            <!-- <div class="col-sm-1"></div> -->
           </div>
         </div>
 
         <div class="row">
           <div class="col-sm-4">
             <h1 class="statNum">YES</h1>
-            <h3>You can take fine arts courses within the design curiculum.</h3>
+            <h3>You can take fine arts courses within the design curriculum.</h3>
           </div>
 
           <div class="col-sm-4">
-            <h1 class="statNumvar">11-20</h1>
-            <h3>Average studio class size.</h3>
+            <h1 class="statNum" style="text-align: center">16</h1>
+            <h3 style="text-align: center">Average studio class size.</h3>
           </div>
 
           <div class="col-sm-4">
@@ -192,24 +192,26 @@
           <div class="col-sm-12">
           <h2 class="categoryRule">Spectrums</h2>
           
-          <img id="slide1" class="slidemargin" style="width:100%" src="images/INFOGRAPHICS/slider_concept.png">
-          <h3 id="BLM">Does your program place more weight on <br>technical skills, or conceptual thinking?</h3>
+          <img class="slidemargin" style="width:100%" src="images/INFOGRAPHICS/slider_concept.png">
+          <!-- <h3 class="questionlabel">Does your program place more weight on <br>technical skills, or conceptual thinking?</h3> -->
           </div>
         </div>
 
         <div class="row graphlabelblk">
-          <div class="col-sm-5">
+          <div class="col-sm-4">
             <h3 class="questionlabel">Approximately what percentage of work done is handmade versus digital?</h3>
           </div>
+          <div class="col-sm-1"></div>
           <div class="col-sm-7">
             <img class="slidemargin" style="width:100%" src="images/INFOGRAPHICS/slider_handmade.png">
           </div>
         </div>
 
         <div class="row graphlabelblk">
-          <div class="col-sm-5">
+          <div class="col-sm-4">
             <h3 class="questionlabel">Approximately what percentage of your work is done independently versus collaboratively?</h3>
           </div>
+          <div class="col-sm-1"></div>
           <div class="col-sm-7">
             <img class="slidemargin" style="width:100%" src="images/INFOGRAPHICS/slider_independent.png">
           </div>
@@ -274,7 +276,7 @@
 
 
         <div class="row">
-          <div class="col-sm-5">
+          <div class="col-sm-4">
             <h1 class="statNum">YES</h1>
             <h3>There is a design specific community workspace.</h3>
 
@@ -282,41 +284,57 @@
             <h3>You have opportunities to show your work on campus.</h3>
 
             <h1 class="statNum">71%</h1>
-            <h3>Of students hold a job while school is in session.</h3>
+            <h3>of students hold a job while school is in session.</h3>
           </div>
 
+          <div class="col-sm-1"></div>
+
           <div class="col-sm-7">
-            <h3 class="graphlabel">Of the students that hold a job.</h3>
+            <h3 class="graphlabel">Amount of hours worked at a job during the semester.</h3>
             <img style="width:100%" src="images/INFOGRAPHICS/hoursworked.png">
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-sm-12">
-            <h3 class="graphlabel">How strong is the sense of community among students in your program?</h3>
+        <div class="row graphlabelblk"></div>
+
+        <div class="row graphlabelblk">
+          <div class="col-sm-5">
+            <h3 class="questionlabel">How strong is the sense of community among students in your program?</h3>
+          </div>
+          <div class="col-sm-7">
             <img class="infomargin" style="width:100%" src="images/INFOGRAPHICS/slider_community.png">
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-sm-12">
-            <h3 class="graphlabel">Do you have a personal or professional relationship with your professors?</h3>
+        <div class="row graphlabelblk">
+          <div class="col-sm-5">
+            <h3 class="questionlabel">Do you have a personal or professional relationship with your professors?</h3>
+          </div>
+          <div class="col-sm-7">
             <img class="infomargin" style="width:100%" src="images/INFOGRAPHICS/slider_teacher.png">
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-sm-12">
-            <h3 class="graphlabel">Do you consider your peers a diverse group socially /ethnically /financially?</h3>
+        <div class="row graphlabelblk">
+          <div class="col-sm-5">
+            <h3 class="questionlabel">Do you consider your peers a diverse group socially /ethnically /financially?</h3>
+          </div>
+          <div class="col-sm-7">
             <img class="infomargin" style="width:100%" src="images/INFOGRAPHICS/slider_diversity.png">
           </div>
         </div>
 
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-sm-7">
             <h3 class="graphlabel">Do you live on campus while classes are in session?</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10">
             <img style="width:100%" src="images/INFOGRAPHICS/livecampus.png">
           </div>
+          <div class="col-sm-1"></div>
         </div>
 
         <div class="row">
@@ -324,34 +342,46 @@
         </div>
 
         <div class="row">
-          <div class="col-sm-5">
+          <div class="col-sm-4">
             <h1 class="statNum">81%</h1>
-            <h3>of students look foreward to graduating.</h3>
+            <h3>of students look forward to graduating.</h3>
 
             <h1 class="statNum">67%</h1>
             <h3>of students feel that the schools branding is honest.</h3>
 
             <h1 class="statNum">43%</h1>
             <h3>of students found general education and liberal arts classes to be a distraction.</h3>
-
-            <h3>Did your program live up to your expectations?</h3>
-            <img style="width:100%" src="images/INFOGRAPHICS/Survey_expectations.png">
           </div>
+
+          <div class="col-sm-1"></div>
 
           <div class="col-sm-7">
-            <h3 class="categoryRule">Reasons for selecting Purchase College.</h3>
+            <h3 class="graphlabel">Reasons for selecting Purchase College.</h3>
             <img style="width:100%" src="images/INFOGRAPHICS/topreasons.png">
-
-            <h3 class="categoryRule">Do you see yourself working with your peers after graduating?</h3>
-            <img style="width:100%" src="images/INFOGRAPHICS/workingpeers.png">
           </div>
         </div>
+
+        <div class="row">
+          
+          
+          <div class="col-sm-6">
+            <h3 class="graphlabel">Do you see yourself working with your peers after graduating?</h3>
+            <img style="width:100%" src="images/INFOGRAPHICS/workingpeers.png">
+          </div>
+          <div class="col-sm-1"></div>
+          <div class="col-sm-5">
+            <h3 class="graphlabel">Did your program live up to your expectations?</h3>
+            <img style="width:100%" src="images/INFOGRAPHICS/survey_expectations.png">
+          </div>
+        </div>
+
+
         <div class="row">
           <div class="col-sm-12">
-            <h3>Do you feel that your program has connected <br>you to "the real world of design"?</h3>
+            <h3 class="graphlabelblk">Do you feel that your program has connected <br>you to "the real world of design"?</h3>
           <img class="infomargin" style="width:100%" src="images/INFOGRAPHICS/slider_realworld.png">
 
-          <h3>Do you feel that your program helped you develop<br> skills and ways of working / thinking that prepares <br>you for a life as a designer?</h3>
+          <h3 class="graphlabelblk">Do you feel that your program helped you develop<br> skills and ways of working / thinking that prepares <br>you for a life as a designer?</h3>
           <img class="infomargin" style="width:100%" src="images/INFOGRAPHICS/slider_prepared.png">
           </div>
 
